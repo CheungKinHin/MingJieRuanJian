@@ -38,5 +38,15 @@ public class BowlingGameUnitTest {
         assertEquals(20,game.score());
     }
 
+    @Test
+    public void test3() {       //2，0，1，9，16个0
 
+        game.roll(2);
+        game.roll(0);
+        game.roll(1);
+        game.roll(9);
+        repeatedRoll(0,16);
+
+        assertEquals(12,game.score());
+    }
 }
