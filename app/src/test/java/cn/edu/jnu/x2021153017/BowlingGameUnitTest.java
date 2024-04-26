@@ -15,7 +15,7 @@ public class BowlingGameUnitTest {
     private BowlingGame game;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp()  {
         game = new BowlingGame();
     }
     private void repeatedRoll(int pin, int times) {
