@@ -23,6 +23,10 @@ public class BowlingGameUnitTest {
             game.roll(pin);
         }
     }
+    private void rollASpare(){
+        game.roll(3);
+        game.roll(7);
+    }
     @Test
     public void test1() {       //20zeros
 
@@ -47,5 +51,19 @@ public class BowlingGameUnitTest {
         repeatedRoll(0,16);
 
         assertEquals(12,game.score());
+    }
+    @Test
+    public void test4() {       //10，10，1，1，14个0
+
+        rollAStrike();
+        rollAStrike();
+        repeatedRoll(1,2);
+        repeatedRoll(0,14);
+
+        assertEquals(35,game.score());
+    }
+
+    private void rollAStrike() {
+        game.roll(10);
     }
 }

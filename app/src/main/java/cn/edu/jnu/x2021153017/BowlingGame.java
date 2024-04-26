@@ -10,13 +10,19 @@ public class BowlingGame {
         int totalScore=0;
         for(int scoreIndex=0;scoreIndex<pins.length;scoreIndex++) {
             totalScore+=pins[scoreIndex];
-            //如果是一个补中，就把下下个击倒分数也计入当前轮
             if(scoreIndex<19){
-                if(10==pins[scoreIndex]+pins[scoreIndex+1]){
+                if(isaSpare(scoreIndex)){
                     totalScore+=pins[scoreIndex+2];
                 }
+
             }
+
         }
         return totalScore;
     }
+
+    private boolean isaSpare(int scoreIndex) {
+        return 10 == pins[scoreIndex] + pins[scoreIndex + 1];
+    }
+
 }
