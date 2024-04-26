@@ -9,28 +9,14 @@
         android:id="@+id/textview_scores"
         android:layout_width="127dp"
         android:layout_height="84dp"
-        android:layout_marginTop="72dp"
-        android:text="TextView"
+        android:layout_marginTop="68dp"
+        android:text="Total score is:"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintHorizontal_bias="0.306"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edittext_frame_scores" />
-
-    <EditText
-        android:id="@+id/edittext_frame_scores"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087" />
 
     <Button
         android:id="@+id/button_calculate"
@@ -38,8 +24,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="36dp"
-        android:text="Button"
+        android:text="calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_frame_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
