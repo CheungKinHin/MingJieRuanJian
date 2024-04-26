@@ -27,6 +27,9 @@ public class BowlingGameUnitTest {
         game.roll(3);
         game.roll(7);
     }
+    private void rollAStrike() {
+        game.roll(10);
+    }
     @Test
     public void test1() {       //20zeros
 
@@ -62,8 +65,11 @@ public class BowlingGameUnitTest {
 
         assertEquals(35,game.score());
     }
+    @Test
+    public void test5() {       //12个10分
+        repeatedRoll(10,12);
 
-    private void rollAStrike() {
-        game.roll(10);
+        assertEquals(300,game.score());
     }
+
 }
