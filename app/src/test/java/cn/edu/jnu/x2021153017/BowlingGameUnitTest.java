@@ -40,7 +40,6 @@ public class BowlingGameUnitTest {
 
     @Test
     public void test3() {       //2，0，1，9，16个0
-
         game.roll(2);
         game.roll(0);
         game.roll(1);
